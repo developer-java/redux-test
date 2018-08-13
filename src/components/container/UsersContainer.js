@@ -1,13 +1,13 @@
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 
-import Users from '../index';
+import Users from '../Users';
 
 const mapStateToProps = (state) => {
     return {
-
+        // TODO
     }
-}
+};
 
 const mapDispatchToProps = dispatch => bindActionCreators({
 

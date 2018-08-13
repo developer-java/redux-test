@@ -3,7 +3,7 @@ import thunk from "redux-thunk";
 import reducers from './reducers';
 import {routerReducer } from 'react-router-redux';
 
-const store = createStore(
+export default createStore(
     combineReducers({
         ...reducers,
         router: routerReducer
@@ -11,5 +11,3 @@ const store = createStore(
     {}, 
     applyMiddleware(thunk)
 );
-
-export default store;
